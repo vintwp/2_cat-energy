@@ -1,0 +1,211 @@
+@import 'fonts';
+@import 'const';
+
+
+
+.header {
+   
+   
+   width: 100%;
+   z-index: 100;
+   position: absolute;
+
+   // &__container {
+   //    background-color: $mColor;
+   // }
+
+   &__body {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: relative;
+      padding: 15px 0;
+   }
+
+   &__logo img, &__logo2 img {
+      max-width: 100%;
+
+   }
+
+   &__logo picture {
+      
+   }
+
+   &__logo2 {
+      flex: 1 1 auto;
+      text-align: center;
+   }
+
+   &__burger {
+      width: 24px;
+      height: 16px;
+      display: block;
+      position: relative;
+   }
+
+   &__burger span,
+   &__burger::before,
+   &__burger::after {
+      position: absolute;
+      left: 0;
+      width: 100%;
+      height: 2px;
+      background: #000000;
+      transition: all 0.3s ease 0s;
+   }
+
+   &__burger::before,
+   &__burger::after {
+      content: '';
+   }
+
+   &__burger span {
+      top: 50%;
+      transform: translate(0, -50%);
+   }
+
+   &__burger::before {
+      top: 0;
+   }
+
+   &__burger::after {
+      bottom: 0;
+   }
+
+   &__burger.active::before {
+      transform: rotate(45deg);
+      top: 7px;
+   }
+
+   &__burger.active::after {
+      transform: rotate(-45deg);
+      bottom: 7px;
+   }
+
+   &__burger.active span {
+      transform: scale(0);
+   }
+
+
+
+   &__menu {
+      position: fixed;
+      top: -100%;
+      left: 20px;
+      transition: all 0.3s ease 0s;
+   }
+
+   &__menu.active {
+      position: fixed;
+      top: 75px;
+   }
+
+   &__list {
+      display: block;
+   }
+
+   &__item:not(:last-child) {
+      margin-bottom: 10px;
+   }
+
+   &__item a {
+      font-size: 16px;
+      line-height: 1.4;
+      color: #000000;
+      text-transform: uppercase;
+      font-family: 'Oswald', sans-serif;
+      position: relative;
+   }
+   &__item a:after {
+      position: absolute;
+      content: '';
+      left: 0;
+      bottom: 0;
+      width: 0;
+      height: 2px;
+      background-color: #68B738;
+      transition: width 0.3s ease-out;
+   }
+
+   &__item a:hover:after {
+      width: 100%;
+   }
+   &__item a.active:after {
+      width: 100%;
+   }
+
+
+
+
+
+   @media (min-width: 767.98px) {
+      // &__container {
+      //    background-color: $tColor;
+      // }
+
+      &__body {
+         padding: 26px 0;
+      }
+      
+      &__logo2 {
+         display: none;
+      }
+
+      &__burger {
+         display: none;
+      }
+      &__logo {
+         flex: 1 1 25%;
+      }
+      &__menu {
+         position: static;
+         flex: 0 1 60%;
+      }
+      &__list {
+         display: flex;
+         justify-content: space-between;
+      }
+
+      &__item:not(:last-child) {
+         margin-bottom: 0;
+      }
+
+      &__item a {
+         font-size: 18px;
+      }
+   }
+
+   @media (min-width: 991.98px) {
+      // &__container {
+      //    background-color: $dColor;
+      // }
+      
+      &__logo {
+         flex: 0 1 50%;
+      }
+
+      &__menu {
+         position: static;
+         flex: 0 1 45%;
+         
+      }
+
+      &__item a {
+         font-size: 20px;
+         line-height: 1.5;
+         color: #FFFFFF;
+      }
+
+      &__item a:after {
+         background-color: #FFFFFF;
+      }
+
+      
+   }
+
+   @media (min-width: 1098.98px) {
+      &__menu {
+         flex: 0 1 40%;
+      }
+   }
+}

@@ -1,0 +1,15 @@
+@import 'const';
+
+
+.footer {
+  background-color: $mColor;
+
+  @media (min-width: 767.98px) {
+    background-color: $tColor;
+  }
+
+
+  @media (min-width: 991.98px) {
+    background-color: $dColor;
+  }
+}

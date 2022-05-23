@@ -1,0 +1,12 @@
+.section-title {
+  font-size: 36px;
+  color: #000000;
+  line-height: 1.1;
+}
+
+@media (min-width: 767.98px) {
+  .section-title {
+    font-size: 60px !important;
+    line-height: 1;
+  }
+}

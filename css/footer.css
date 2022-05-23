@@ -1,0 +1,16 @@
+/*mobile background*/
+/*tablet color*/
+/*desktop color*/
+.footer {
+  background-color: #64bbde;
+}
+@media (min-width: 767.98px) {
+  .footer {
+    background-color: #918726;
+  }
+}
+@media (min-width: 991.98px) {
+  .footer {
+    background-color: #19d473;
+  }
+}
