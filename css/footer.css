@@ -1,16 +1,49 @@
-/*mobile background*/
-/*tablet color*/
-/*desktop color*/
 .footer {
-  background-color: #64bbde;
+  background-color: #F2F2F2;
+}
+.footer__logo, .footer__social {
+  border-bottom: 1px solid #D9D9D9;
+}
+.footer__logo {
+  display: flex;
+  justify-content: center;
+  padding: 39px 0 32px 0;
+}
+.footer__social {
+  padding: 24px 0;
+}
+.footer__copyright a {
+  display: flex;
+  justify-content: space-between;
+  padding: 22px 0;
 }
 @media (min-width: 767.98px) {
-  .footer {
-    background-color: #918726;
+  .footer__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .footer__logo, .footer__social {
+    border-bottom: none;
+  }
+  .footer__copyright a {
+    align-items: center;
+  }
+  .footer__copyright span {
+    margin-right: 22px;
   }
 }
-@media (min-width: 991.98px) {
-  .footer {
-    background-color: #19d473;
+
+.social__list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.social__item:not(:last-child) {
+  margin-right: 14%;
+}
+@media (min-width: 767.98px) {
+  .social__item:not(:last-child) {
+    margin-right: 43%;
   }
 }

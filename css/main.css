@@ -237,20 +237,53 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-/*mobile background*/
-/*tablet color*/
-/*desktop color*/
 .footer {
-  background-color: #64bbde;
+  background-color: #F2F2F2;
+}
+.footer__logo, .footer__social {
+  border-bottom: 1px solid #D9D9D9;
+}
+.footer__logo {
+  display: flex;
+  justify-content: center;
+  padding: 39px 0 32px 0;
+}
+.footer__social {
+  padding: 24px 0;
+}
+.footer__copyright a {
+  display: flex;
+  justify-content: space-between;
+  padding: 22px 0;
 }
 @media (min-width: 767.98px) {
-  .footer {
-    background-color: #918726;
+  .footer__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .footer__logo, .footer__social {
+    border-bottom: none;
+  }
+  .footer__copyright a {
+    align-items: center;
+  }
+  .footer__copyright span {
+    margin-right: 22px;
   }
 }
-@media (min-width: 991.98px) {
-  .footer {
-    background-color: #19d473;
+
+.social__list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.social__item:not(:last-child) {
+  margin-right: 14%;
+}
+@media (min-width: 767.98px) {
+  .social__item:not(:last-child) {
+    margin-right: 43%;
   }
 }
 
@@ -1217,6 +1250,66 @@ h1, h2, h3, h4, h5, h6 {
   }
   .ba-section .twentytwenty-handle-line {
     background-color: #DCDCDC;
+  }
+}
+
+.location {
+  position: relative;
+}
+.location__contacts {
+  display: flex;
+  height: 114px;
+  align-items: center;
+}
+.location__message {
+  font-size: 16px;
+  line-height: 1.25;
+  text-transform: uppercase;
+  color: #111111;
+  flex: 0 1 50%;
+}
+.location__adress {
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 1.429;
+  color: #444444;
+  flex: 0 1 50%;
+  display: flex;
+  flex-direction: column;
+}
+.location__adress p:last-child {
+  align-items: flex-end;
+}
+.location #map {
+  height: 400px;
+  width: 100%;
+}
+@media (min-width: 767.98px) {
+  .location__contacts {
+    height: 200px;
+    padding: 0 40px;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+  }
+  .location__message {
+    font-size: 20px;
+    flex: 0 1 27.5%;
+  }
+  .location__adress {
+    font-size: 16px;
+    line-height: 1.25;
+    flex: 0 1 27.5%;
+  }
+}
+@media (min-width: 991.98px) {
+  .location__contacts {
+    position: absolute;
+    width: 570px;
+    background-color: #FFFFFF;
+    transform: translate(0, -50%);
+    top: 50%;
+    left: 5%;
   }
 }
 

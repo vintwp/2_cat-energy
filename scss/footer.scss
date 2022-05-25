@@ -1,15 +1,79 @@
-@import 'const';
-
-
 .footer {
-  background-color: $mColor;
+  background-color: #F2F2F2;
 
-  @media (min-width: 767.98px) {
-    background-color: $tColor;
+  &__container {}
+
+
+  &__wrapper {}
+
+  &__logo,
+  &__social {
+    border-bottom: 1px solid #D9D9D9;
+  }
+
+  &__logo {
+    display: flex;
+    justify-content: center;
+    padding: 39px 0 32px 0;
+
   }
 
 
-  @media (min-width: 991.98px) {
-    background-color: $dColor;
+  &__social {
+    padding: 24px 0;
+  }
+
+  &__copyright a {
+    display: flex;
+    justify-content: space-between;
+    padding: 22px 0;
+  }
+
+
+  @media (min-width: 767.98px) {
+    &__wrapper {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    &__logo,
+    &__social {
+      border-bottom: none;
+    }
+
+    &__copyright a {
+      align-items: center;
+    }
+
+    &__copyright span {
+      margin-right: 22px;
+    }
+
+
+
+
+  }
+
+
+}
+
+.social {
+
+  &__list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+  &__item:not(:last-child) {
+    margin-right: 14%;
+  }
+
+  @media (min-width: 767.98px) {
+    &__item:not(:last-child) {
+      margin-right: 43%;
+    }
   }
 }
