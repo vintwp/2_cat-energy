@@ -15,7 +15,14 @@
     display: flex;
     justify-content: center;
     padding: 39px 0 32px 0;
+    
+  }
 
+
+
+  &__logo a:active img{
+    transition: all 0.3s ease-in-out;
+    opacity: 0.6;
   }
 
 
@@ -29,6 +36,47 @@
     padding: 22px 0;
   }
 
+  &__copyright a {
+    color: #444444;
+  }
+
+  &__logo img, .social__item svg, &__copyright span, &__copyright img {
+    transition: all 0.3s;
+  }
+
+  &__logo a:hover img, &__copyright a:hover span {
+    opacity: 0.8;
+  }
+
+  &__logo a:active img, &__copyright a:active span {
+    opacity: 0.6;
+  }
+  .social__icon path {
+    transition: all 0.3s;
+  }
+
+  .social__item a:hover .social__icon path,
+   &__copyright a:hover .social__icon path {
+    fill: #68B738;
+    // stroke: #68B738;
+  }
+
+  .social__item a:hover .social__icon-fb path{
+    fill: none !important;
+    stroke: #68B738 !important;
+  }
+  
+
+  .social__item a:active .social__icon path,
+  &__copyright a:active .social__icon path {
+    fill: #68B738;
+    opacity: 0.6;
+  }
+
+  .social__item a:active .social__icon-fb path {
+    stroke: #68B738 !important;
+    opacity: 0.6;
+  }
 
   @media (min-width: 767.98px) {
     &__wrapper {

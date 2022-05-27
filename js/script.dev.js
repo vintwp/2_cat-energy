@@ -1,19 +1,20 @@
 "use strict";
 
 $(document).ready(function () {
-  var wWidth = $('body').innerWidth(); //HEADER
+  var wWidth = $('body').innerWidth(); //START HEADER
 
   $('.header__burger').click(function (event) {
     $('.header__burger').toggleClass('active');
     $('.header__menu').toggleClass('active');
     $('body').toggleClass('lock');
   }); // END HEADER
-  // active page link
+  // START active page link
 
   var pgurl = window.location.href.substr(window.location.href.lastIndexOf("/") + 1);
   $(".header__item > a").each(function () {
     if ($(this).attr("href") == pgurl || $(this).attr("href") == '') $(this).addClass("active");
-  }); // before-after slider
+  }); // END active page link
+  // START before-after slider
 
   $(".ba-slider").twentytwenty(); // $(".twentytwenty-container").twentytwenty({
   //    default_offset_pct: 0.5, // How much of the before image is visible when the page loads

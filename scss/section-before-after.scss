@@ -37,23 +37,31 @@
       font-size: 24px;
     }
 
+    // .numbers__subtext {
+    //   position: absolute;
+    //   transform: translate(-50%, 50%);
+    //   font-size: 12px;
+    //   color: #444444;
+    //   font-family: 'Arial', sans-serif;
+    //   text-transform: none;
+    //   bottom: 0;
+    //   left: 50%;
+    //   text-align: center;
+    // }
     .numbers__subtext {
-      position: absolute;
+      width: 75%;
       transform: translate(-50%, 50%);
       font-size: 12px;
       color: #444444;
       font-family: 'Arial', sans-serif;
       text-transform: none;
+      position: absolute;
       bottom: 0;
       left: 50%;
-      text-align: center;
-    }
-
-    .numbers__subtext span {
-      background-color: #EAEAEA;
       padding: 0 5px;
-    }
+      background-color: #EAEAEA;
 
+    }
     .numbers__cost {
       flex: 1 1 auto;
       text-align: center;
@@ -135,29 +143,6 @@
   .twentytwenty-handle {
     display: none;
   }
-  
-  // .twentytwenty-handle-line-m-before {
-  //   top: 100%;
-  //   left: 0;
-  //   font-size: 20px;
-  //   line-height: 1.25;
-  //   text-transform: uppercase;
-  //   position: absolute;
-    
-  // }
-  // .twentytwenty-handle-line-m-after {
-  //   top: 0;
-  //   right: 0;
-  //   margin-left: 25px;
-  //   font-size: 20px;
-  //   line-height: 1.25;
-  //   text-transform: uppercase;
-  //   position: absolute;
-  // }
-
-  // .twentytwenty-handle {
-  //   display: none;
-  // }
   /*-------------------------------------------------------------*/
 
 
@@ -210,16 +195,11 @@
       }
 
       .numbers__subtext {
-        background-color: transparent;
+        background-color: #FFFFFF;
         font-size: 14px;
         width: 90%;
         
         
-      }
-
-      .numbers__subtext span {
-        padding: 0 8px;
-        background-color: #FFFFFF;
       }
 
       .numbers__cost {
@@ -345,8 +325,8 @@
     }
 
     &__numbers {
-      width: 84%;
-    }
+      width: 75%;
+    
 
     .numbers__text {
       flex: 0 1 43%;
@@ -354,7 +334,7 @@
     }
 
     
-    .numbers__subtext span {
+    .numbers__subtext {
       background-color: #F2F2F2;
     }
 
@@ -375,11 +355,7 @@
     .numbers__cost span:last-child {
       text-align-last: center;
     }
-
-
-
-
-
+    }
 
     &__slider {
       flex: 0 1 50%;
@@ -406,15 +382,5 @@
 
 
   }
-
-
-
-
-
-
-
-
-
-
 
 }

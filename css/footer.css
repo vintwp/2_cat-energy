@@ -9,6 +9,10 @@
   justify-content: center;
   padding: 39px 0 32px 0;
 }
+.footer__logo a:active img {
+  transition: all 0.3s ease-in-out;
+  opacity: 0.6;
+}
 .footer__social {
   padding: 24px 0;
 }
@@ -16,6 +20,36 @@
   display: flex;
   justify-content: space-between;
   padding: 22px 0;
+}
+.footer__copyright a {
+  color: #444444;
+}
+.footer__logo img, .footer .social__item svg, .footer__copyright span, .footer__copyright img {
+  transition: all 0.3s;
+}
+.footer__logo a:hover img, .footer__copyright a:hover span {
+  opacity: 0.8;
+}
+.footer__logo a:active img, .footer__copyright a:active span {
+  opacity: 0.6;
+}
+.footer .social__icon path {
+  transition: all 0.3s;
+}
+.footer .social__item a:hover .social__icon path, .footer__copyright a:hover .social__icon path {
+  fill: #68B738;
+}
+.footer .social__item a:hover .social__icon-fb path {
+  fill: none !important;
+  stroke: #68B738 !important;
+}
+.footer .social__item a:active .social__icon path, .footer__copyright a:active .social__icon path {
+  fill: #68B738;
+  opacity: 0.6;
+}
+.footer .social__item a:active .social__icon-fb path {
+  stroke: #68B738 !important;
+  opacity: 0.6;
 }
 @media (min-width: 767.98px) {
   .footer__wrapper {

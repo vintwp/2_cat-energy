@@ -1,6 +1,6 @@
 $(document).ready(function () {
    var wWidth = $('body').innerWidth();
-   //HEADER
+   //START HEADER
    $('.header__burger').click(function (event) {
       $('.header__burger').toggleClass('active');
       $('.header__menu').toggleClass('active');
@@ -8,14 +8,15 @@ $(document).ready(function () {
    });
    // END HEADER
 
-   // active page link
+   // START active page link
    var pgurl = window.location.href.substr(window.location.href.lastIndexOf("/") + 1);
    $(".header__item > a").each(function () {
       if ($(this).attr("href") == pgurl || $(this).attr("href") == '')
          $(this).addClass("active");
    })
+   // END active page link
 
-   // before-after slider
+   // START before-after slider
 
 
    $(".ba-slider").twentytwenty();
