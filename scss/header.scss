@@ -129,10 +129,10 @@ body.lock {
       transition: all 0.3s ease-out;
    }
    &__item a:hover{
-      color:rgba(0, 0, 0, 0.6)
+      opacity: 0.6;
    }
    &__item a:active{
-      color:rgba(0, 0, 0, 0.3)
+      opacity: 0.3;
    }
    &__item a:after {
       position: absolute;
@@ -194,10 +194,7 @@ body.lock {
    }
 
    @media (min-width: 991.98px) {
-      // &__container {
-      //    background-color: $dColor;
-      // }
-      
+
       &__logo {
          flex: 0 1 50%;
       }
@@ -212,13 +209,6 @@ body.lock {
          font-size: 20px;
          line-height: 1.5;
          color: #FFFFFF;
-      }
-      
-      &__item a:hover{
-         color:rgba(255, 255, 255, 0.6)
-      }
-      &__item a:active{
-         color:rgba(255, 255, 255, 0.3)
       }
 
       &__item a:after {

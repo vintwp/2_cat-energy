@@ -1,19 +1,20 @@
+@import 'nullstyles';
+@import 'fonts';
+@import 'general';
+@import 'header';
+@import 'footer';
+@import 'location';
+@import 'catalog-additions';
+
 
 header {
 	border-bottom: 1px solid #D9D9D9;
 }
 
 .catalog {
+
 	padding-top: 66px;
 	margin-bottom: calc(27px + 12px);
-
-		&__container {
-
-		}
-
-		&__wrapper {
-
-		}
 
 		&__title, &__item {
 			border-bottom: 1px solid #EBEBEB;
@@ -151,13 +152,16 @@ header {
 			opacity: 0.3;
 		}
 
+		.catalog__item-last .catalog__button {
+			width: 100%;
+		}
+
 
 
 		@media (min-width: 767.98px) {
 				padding-top: 140px;
 
-			
-			&__title, &__item {
+				&__title, &__item {
 				border-bottom: none;
 				padding: 0;
 				margin: 0;
@@ -262,15 +266,15 @@ header {
 				width: 93%;
 				padding: 0 0 115% 0;
 			}
-			.item__image-small img {
-			}
-
-			.item__image-big img {
-			}
 	
 			.item__image img {
 				width: 100%;
 				height: auto;
+			}
+
+			.item__button {
+				font-size: 16px;
+				line-height: 1.25;
 			}
 		}
 
@@ -279,8 +283,6 @@ header {
 			&__item {
 				flex: 0 1 20.5%;
 			}
-
-
 
 			.item__icon-last {
 				flex: 0 1 41.25%;
@@ -297,9 +299,26 @@ header {
 	
 	header {
 		border-bottom: none;
+
+	}
+	.header__item a {
+		color: #000000
+	}
+
+	.header__item a:after {
+		background-color: #68B738;
 	}
 	
 }
+
+@media (min-width: 991.98px) {
+
+	.header__item a {
+		color: #111111;
+	}
+	
+}
+
 
 
 

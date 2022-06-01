@@ -91,7 +91,6 @@
         if ($('body').innerWidth() < 768) {
           beforeImg.css("clip", "rect(0," + offset.w + "," + offset.h + ",0)");
           afterImg.css("clip", "rect(0," + offset.px0 + "," + offset.h + "," + offset.px0 + ")");
-          console.log($('#button-before').length);
           $('#button-after').click(function () {
             beforeImg.css("clip", "rect(0," + offset.px0 + "," + offset.h + "," + offset.px0 + ")");
             afterImg.css("clip", "rect(0," + offset.w + "," + offset.h + ",0)");
