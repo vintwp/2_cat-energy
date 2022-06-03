@@ -1,0 +1,393 @@
+@import '_nullstyles';
+@import '_fonts';
+@import '_input';
+@import '_general';
+@import '_header';
+@import '_footer';
+@import '_location';
+
+
+header {
+  border-bottom: 1px solid #D9D9D9;
+}
+
+
+.programm {
+  padding-top: 93px;
+  margin-bottom: 32px;
+
+  &__title {
+    margin-bottom: 35px;
+  }
+
+  &__container {}
+
+  &__subtext {
+    width: 70%;
+    font-size: 14px;
+    line-height: 1.286;
+    color: #000000;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+  }
+
+
+
+  &__pet-input {
+    margin: 0 0 25px 0;
+  }
+
+  &__type {
+    padding: 20px 0;
+    position: relative;
+  }
+
+  &__type div:not(:nth-last-child(2)) {
+    margin-bottom: 13px;
+  }
+
+  &__type div {
+  }
+
+  &__pet, &__type, &__owner,  &__comment {
+    margin: 0 0 25px 0;
+  }
+
+  &__subtitle {
+    font-size: 24px;
+    line-height: 1.1;
+    padding: 0 20px 0 0;
+    background-color: #FFFFFF;
+    margin: 0 0 32px 0;
+    position: relative;
+  }
+
+  &__owner {
+
+    .owner__mail input {
+      background: url('../img/icons/icon-mail.svg') 0 0/18px 14px no-repeat;
+      background-position: calc(100% - 15px) 50%;
+    }
+
+    .owner__phone input {
+      background: url('../img/icons/icon-phone.svg') 0 0/20px 20px no-repeat;
+      background-position: calc(100% - 15px) 50%;
+    }
+
+    .programm__subtitle {
+      width: 72%;
+    }
+
+  }
+
+  /* TITLE LINE*/
+
+  .w-divider {
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background: #D9D9D9;
+    top: 0;
+    left: 0;
+  }
+
+  .w-divider100 {
+    top: 100% !important;
+  }
+
+
+  &__line {
+    position: absolute;
+    width: 100%;
+    // left: 20px !important;
+    z-index: -1;
+  }
+
+  &__line span {
+    display: block;
+    height: 2px;
+    background: #68B738;
+  }
+
+  &__owner &__line, 
+  &__comment &__line, 
+  &__additional &__line {
+    top: 50%;
+  }
+
+
+
+  /* END TITLE LINE*/
+
+
+
+  &__comment {
+
+
+    .programm__subtitle {
+      width: max-content;
+    }
+
+
+
+    .programm__comment-area {
+      border: 1px solid #E7E7E7;
+      width: 100%;
+      height: 100%;
+      height: 150px;
+    }
+
+    .programm__comment-area textarea {
+      width: 100%;
+      height: 100%;
+      font-size: 16px;
+      line-height: 1.125;
+      padding: 13px 15px;
+      text-transform: uppercase;
+    }
+
+  }
+
+  &__additional {
+
+    margin-bottom: 35px;
+
+    .programm__subtitle {
+      width: max-content;
+    }
+
+
+
+    .programm__additional-list div:not(:nth-last-child(1)) {
+      margin-bottom: 13px;
+    }
+
+  }
+
+  &__button {
+    .programm__button-button {
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-family: 'Arial', sans-serif;
+      text-align: center;
+      font-size: 14px;
+      line-height: 1.15;
+      color: #000000;
+    }
+
+
+
+  }
+
+  /*INPUT FORM*/
+  .input-container {
+    display: flex;
+    align-items: center;
+  }
+
+  input {
+    border: 1px solid #E7E7E7;
+    font-size: 16px;
+    line-height: 1.125;
+    text-transform: uppercase;
+  }
+
+  .input-container {
+    font-size: 16px;
+    line-height: 1.125;
+    text-transform: uppercase;
+  }
+
+  .input-container input {
+    font-size: 16px;
+    line-height: 1.125;
+    text-transform: uppercase;
+  }
+
+  .input-container:not(:last-child) {
+    margin-bottom: 13px;
+  }
+
+  .input-container input {
+    flex: 1 1 auto;
+    margin-left: 13px;
+    padding: 14px 15px;
+  }
+  /* END INPUT FORM*/
+
+}
+
+/*START CHECKBOX STYLE*/
+
+
+input+label {
+  font-size: 16px;
+  line-height: 1.25;
+  color: #222222;
+  text-transform: uppercase;
+}
+
+input:not(:last-child) {
+  margin-bottom: 25px;
+}
+
+/*END CHECKBOX  STYLE*/
+
+
+
+
+
+@media (min-width: 767.98px) {
+  
+  .header {
+    border: none;
+  
+    &__item a {
+      color: #000000;
+    }
+    &__item a:after {
+      background-color: #68B738;
+    }
+
+  }
+
+  .programm {
+    padding-top: 140px;
+
+    &__pet, &__type, &__owner,  &__comment, &__pet-input {
+      margin: 0 0 65px 0;
+    }
+
+    .divider {
+      display: none;
+    }
+
+
+    &__title {
+      margin-bottom: 50px;
+    }
+
+    &__subtitle {
+      font-size: 36px;
+      line-height: 1;
+      width: max-content;
+      margin: 0 0 0 -20px;
+      padding: 0 20px;
+    }
+
+    .programm__owner .programm__subtitle {
+      width: max-content !important;
+    }
+
+
+    &__subtext {
+      font-size: 20px;
+      line-height: 1.5;
+      width: 50%;
+      margin-bottom: 60px;
+    }
+
+
+    .input-container input, .input-container span, input + label {
+      font-size: 20px;
+      line-height: 1.5;
+    }
+
+    .input-container:not(:last-child) {
+      margin-bottom: 20px;
+    }
+
+    &__type {
+      margin: 0 0 75px 0;
+      border: 1px solid #E7E7E7;
+      padding: 25px 28px;
+
+    }
+
+    &__type div:not(:nth-last-child(2)) {
+      margin-bottom: 20px;
+    }
+
+    &__type .w-divider {
+      display: none;
+    }
+
+    &__owner &__subtitle, 
+    &__comment &__subtitle, 
+    &__additional &__subtitle {
+      margin-bottom: 60px;
+    }
+
+    .programm__additional-list {
+      display: flex;
+    }
+    
+    .programm__additional-list {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+
+    .programm__additional-list div {
+      flex: 0 1 40%;
+    }
+
+
+
+    &__button {
+      display: flex;
+      align-items: center;
+      
+    }
+
+    &__button &__button-button {
+      flex: 0 1 40%;
+      margin: 0 8% 0 0;
+    }
+
+    &__button p{
+      flex: 0 1 25%;
+    }
+
+
+
+
+  }
+}
+
+@media (min-width: 991.98px) {
+
+  .programm {
+
+    &__pet {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    &__pet-input, &__type {
+      flex: 0 1 45%;
+      margin: 0;
+    }
+
+    &__owner-wrapper {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .owner__mail, .owner__phone {
+      flex: 0 1 48.5% ;
+    }
+
+    .owner__mail {
+      margin: 0 !important;
+    }
+
+    &__additional-list > div {
+      flex: 0 1 18% !important;
+    } 
+
+  }
+
+} 

@@ -34,12 +34,35 @@ $(document).ready(function () {
 
    $(window).resize(function () {
       var wWidth = $('body').innerWidth();
+      var containerOffset = $('.container').offset();
+      console.log(containerOffset);
+
+
+      if (wWidth <= 768) {
+         $('.w-divider').css({
+            'width': wWidth*4,
+            'left': '0'
+         });
+
+         $('hr.w-divider').css({
+            'width': wWidth*4,
+            'left':  -wWidth/2
+         });
+
+      } else {
+         $('.w-divider').css({
+            'width': wWidth*4,
+            'left': -wWidth/2
+         });
+      };
+
       if (wWidth >= 768) {
          let hburger = $('.header__burger');
          let hmenu = $('.header__menu');
          hburger.removeClass('active');
          hmenu.removeClass('active');
       };
+
    });
 });
 

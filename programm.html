@@ -5,8 +5,8 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="css/catalog.css">
-	<title>CAT ENERGY CATALOG</title>
+	<link rel="stylesheet" href="css/programm.css">
+	<title>CAT ENERGY PROGRAMM</title>
 </head>
 
 <body>
@@ -41,304 +41,110 @@
 		</header>
 
 		<main class="main">
-			<section class="catalog">
-				<div class="catalog__container">
-					<h1 class="catalog__title section-title">Каталог продукции</h1>
-					<div class="catalog__wrapper">
-						<ul class="catalog__list">
-							<li class="catalog__item">
-								<div class="item__frame">
-									<div class="item__image item__image-small">
-										<img src="img/catalog/item-chicken-500.png" alt="Chicken 500" class="">
-									</div>
-									<div class="item__info">
-										<h3 class="item__title">Cat Energy PRO 500 г</h3>
-										<table class="item__list">
-											<tr>
-												<td class="item_option-title">Масса</td>
-												<td class="item_option-value">500 г</td>
-											</tr>
-											<tr>
-												<td class="item_option-title">Вкус</td>
-												<td class="item_option-value">Курица</td>
-											</tr>
-											<tr>
-												<td class="item_option-title">Цена</td>
-												<td class="item_option-value">700 грн.</td>
-											</tr>
-										</table>
-									</div>
+			<section class="programm">
+				<form action="programm__form" action="#" method="post">
+					<div class="programm__container container">
+						<div class="programm__title section-title">
+							<h2>Подбор программы</h2>
+						</div>
+						<div class="programm__subtext">
+							<p>Заполните анкету, и мы подберем программу питания для вашего кота</p>
+						</div>
+						<div class="programm__pet">
+							<div class="programm__pet-input">
+								<div class="pet__name input-container">
+									<span>Имя:*</span>
+									<!-- <input type="tel" name="pet-name" value="" /> -->
+									<input type="text" name="pet-name" value="" placeholder="БАРСИК" />
 								</div>
-								<div class="catalog__button">
-									<button class="item__button button">Заказать</button>
+								<div class="pet__weight input-container">
+									<span>Вес (кг):*</span>
+									<input type="number" name="pet-weight" value="" placeholder="7" />
 								</div>
-								<div class="item__background"></div>
-							</li>
-							<li class="catalog__item">
-								<div class="item__frame">
-									<div class="item__image item__image-big">
-										<img src="img/catalog/item-chicken-1000.png" alt="Chicken 1000" class="">
-									</div>
-									<div class="item__info">
-										<h3 class="item__title">Cat Energy PRO 1000 г</h3>
-										<table class="item__list">
-											<tr>
-												<td class="item_option-title">Масса</td>
-												<td class="item_option-value">1000 г</td>
-											</tr>
-											<tr>
-												<td class="item_option-title">Вкус</td>
-												<td class="item_option-value">Курица</td>
-											</tr>
-											<tr>
-												<td class="item_option-title">Цена</td>
-												<td class="item_option-value">1000 грн.</td>
-											</tr>
-										</table>
-									</div>
-								</div>
-								<div class="catalog__button">
-									<button class="item__button button">Заказать</button>
-								</div>
-								<div class="item__background"></div>
-							</li>
-							<li class="catalog__item">
-								<div class="item__frame">
-									<div class="item__image item__image-small">
-										<img src="img/catalog/item-fish-500.png" alt="Fish 500" class="">
-									</div>
-									<div class="item__info">
-										<h3 class="item__title">Cat Energy PRO 500 г</h3>
-										<table class="item__list">
-											<tr>
-												<td class="item_option-title">Масса</td>
-												<td class="item_option-value">500 г</td>
-											</tr>
-											<tr>
-												<td class="item_option-title">Вкус</td>
-												<td class="item_option-value">Рыба</td>
-											</tr>
-											<tr>
-												<td class="item_option-title">Цена</td>
-												<td class="item_option-value">700 грн.</td>
-											</tr>
-										</table>
-									</div>
-								</div>
-								<div class="catalog__button">
-									<button class="item__button button">Заказать</button>
-								</div>
-								<div class="item__background"></div>
-							</li>
-							<li class="catalog__item">
-								<div class="item__frame">
-									<div class="item__image item__image-big">
-										<img src="img/catalog/item-fish-1000.png" alt="Fish 1000" class="">
-									</div>
-									<div class="item__info">
-										<h3 class="item__title">Cat Energy PRO 500 г</h3>
-										<table class="item__list">
-											<tr>
-												<td class="item_option-title">Масса</td>
-												<td class="item_option-value">1000 г</td>
-											</tr>
-											<tr>
-												<td class="item_option-title">Вкус</td>
-												<td class="item_option-value">Рыба</td>
-											</tr>
-											<tr>
-												<td class="item_option-title">Цена</td>
-												<td class="item_option-value">1000 грн.</td>
-											</tr>
-										</table>
-									</div>
-								</div>
-								<div class="catalog__button">
-									<button class="item__button button">Заказать</button>
-								</div>
-								<div class="item__background"></div>
-							</li>
-							<li class="catalog__item">
-								<div class="item__frame">
-									<div class="item__image item__image-small">
-										<img src="img/catalog/item-buckwheat-500.png" alt="Buckwheat 500" class="">
-									</div>
-									<div class="item__info">
-										<h3 class="item__title">Cat Energy Slim 500 г</h3>
-										<table class="item__list">
-											<tr>
-												<td class="item_option-title">Масса</td>
-												<td class="item_option-value">500 г</td>
-											</tr>
-											<tr>
-												<td class="item_option-title">Вкус</td>
-												<td class="item_option-value">Гречка</td>
-											</tr>
-											<tr>
-												<td class="item_option-title">Цена</td>
-												<td class="item_option-value">400 грн.</td>
-											</tr>
-										</table>
-									</div>
-								</div>
-								<div class="catalog__button">
-									<button class="item__button button">Заказать</button>
-								</div>
-								<div class="item__background"></div>
-							</li>
-							<li class="catalog__item">
-								<div class="item__frame">
-									<div class="item__image item__image-big">
-										<img src="img/catalog/item-buckwheat-1000.png" alt="Buckwheat 1000" class="">
-									</div>
-									<div class="item__info">
-										<h3 class="item__title">Cat Energy Slim 1000 г</h3>
-										<table class="item__list">
-											<tr>
-												<td class="item_option-title">Масса</td>
-												<td class="item_option-value">1000 г</td>
-											</tr>
-											<tr>
-												<td class="item_option-title">Вкус</td>
-												<td class="item_option-value">Гречка</td>
-											</tr>
-											<tr>
-												<td class="item_option-title">Цена</td>
-												<td class="item_option-value">700 грн.</td>
-											</tr>
-										</table>
-									</div>
-								</div>
-								<div class="catalog__button">
-									<button class="item__button button">Заказать</button>
-								</div>
-								<div class="item__background"></div>
-							</li>
-							<li class="catalog__item">
-								<div class="item__frame">
-									<div class="item__image item__image-small">
-										<img src="img/catalog/item-rice-500.png" alt="Rice 500" class="">
-									</div>
-									<div class="item__info">
-										<h3 class="item__title">Cat Energy Slim 500 г</h3>
-										<table class="item__list">
-											<tr>
-												<td class="item_option-title">Масса</td>
-												<td class="item_option-value">500 г</td>
-											</tr>
-											<tr>
-												<td class="item_option-title">Вкус</td>
-												<td class="item_option-value">Рис</td>
-											</tr>
-											<tr>
-												<td class="item_option-title">Цена</td>
-												<td class="item_option-value">500 грн.</td>
-											</tr>
-										</table>
-									</div>
-								</div>
-								<div class="catalog__button">
-									<button class="item__button button">Заказать</button>
-								</div>
-								<div class="item__background"></div>
-							</li>
-							<li class="catalog__item catalog__item-last">
-
-								<div class="item__frame">
-									<div class="item__icon item__icon-last">
-										<img src="img/icons/icon-plus.svg" alt="">
-									</div>
-									<div class="item__text item__text-last">
-										<div class="item__title item__title-last">
-											<p>Показать еще 100500 товаров</p>
-										</div>
-										<div class="item__subtext item__subtext-last">
-											<p>На самом деле вкусов гораздо больше!</p>
-										</div>
-									</div>
-									<div class="catalog__button">
-										<button class="item__button button">Показать все</button>
-									</div>
-
-								</div>
-
-
-							</li>
-						</ul>
-					</div>
-				</div>
-			</section>
-			<section class="additions">
-				<div class="additions__line">
-					<span></span>
-				</div>
-				<div class="additions__container">
-					<div class="additions__title section-title"><h3>Дополнительные товары</h3>
-					</div>
-					<div class="additions__wrapper">
-						<ul class="additions__list">
-							<li class="additions__item">
-								<div class="additions__item-wrapper">
-									<div class="additions__item-title">Сахарозаменитель</div>
-									<div class="additions__item-value">1 упаковка (100 г)</div>
-									<div class="additions__item-price">200 грн</div>
-								</div>
-								<div class="additions__button">
-									<button class="additions__item-button button">Заказать</button>
-								</div>
-
-							</li>
-							<li class="additions__item">
-								<div class="additions__item-wrapper">
-									<div class="additions__item-title">Питьевая вода</div>
-									<div class="additions__item-value">5 литров</div>
-									<div class="additions__item-price">50 грн</div>
-								</div>
-								<div class="additions__button">
-									<button class="additions__item-button button">Заказать</button>
-								</div>
-							</li>
-							<li class="additions__item">
-								<div class="additions__item-wrapper">
-									<div class="additions__item-title">молоко</div>
-									<div class="additions__item-value">1 литр</div>
-									<div class="additions__item-price">100 грн</div>
-								</div>
-								<div class="additions__button">
-									<button class="additions__item-button button">Заказать</button>
-								</div>
-							</li>
-							<li class="additions__item">
-								<div class="additions__item-wrapper">
-									<div class="additions__item-title">витамины</div>
-									<div class="additions__item-value">1 упаковка (30 г)</div>
-									<div class="additions__item-price">300 грн</div>
-								</div>
-								<div class="additions__button">
-									<button class="additions__item-button button">Заказать</button>
-								</div>
-							</li>
-						</ul>
-						<div class="additions__gift">
-							<div class="additions__gift-container">
-								<picture>
-									<source srcset="img/catalog/gift-image-desktop.png" type="image/png" media="(min-width:991.98px)">
-									<source srcset="img/catalog/gift-image-tablet.png" type="image/png" media="(min-width:767.98px)">
-									<source srcset="img/catalog/gift-image-mobile.png" type="image/png" media="(max-width:767.97px)">
-									<img src="img/catalog/gift-image-desktop.png" alt="Gift">
-								</picture>
-								<div class="additions__gift-label">
-									<div class="additions__gift-icon">
-										<img src="img/icons/icon-gift.svg" alt="Gift">
-									</div>
-									<div class="additions__gift-text">
-										<p>Закажите все и получите чехол для кота в подарок!</p>
-									</div>
+								<div class="pet__age input-container">
+									<span>Возраст (лет):*</span>
+									<input type="number" name="pet-age" value="" placeholder="7" />
 								</div>
 							</div>
+							<div class="programm__type">
+								<hr class="w-divider">
+								<div><input type="radio" name="programm-type" id="wloss" checked>
+									<label for="wloss">Похудение</label>
+								</div>
+								<div><input type="radio" name="programm-type" id="wgain">
+									<label for="wgain">Похудение</label>
+								</div>
+								<div><input type="radio" name="programm-type" id="wadvice">
+									<label for="wadvice">Не знаю (нужен совет)
+								</div>
+								<hr class="w-divider w-divider100">
+							</div>
 						</div>
-					</div>
-				</div>
+						<div class="programm__owner">
+							<div class="programm__subtitle">
+								<h3>Контактные данные (владельца кота)</h3>
+								<div class="programm__line w-divider">
+									<span></span>
+								</div>
+							</div>
+							<div class="programm__owner-wrapper">
+							<div class="owner__mail input-container">
+								<span>E-mail:*</span>
+								<input type="text" name="pet-weight" value="" placeholder="kuklachev@gmail.com" />
+							</div>
+							<div class="owner__phone input-container">
+								<span>Телефон:*</span>
+								<input type="number" name="pet-weight" value="" placeholder="380661111111 " />
+							</div>
+							</div>
+						</div>
+
+						<div class="programm__comment">
+							<div class="programm__subtitle">
+								<h3>Комментарий</h3>
+								<div class="programm__line w-divider">
+									<span></span>
+								</div>
+							</div>
+							<div class="programm__comment-area">
+								<textarea name="text" placeholder="Расскажите обо всех повадках кота"></textarea>
+							</div>
+						</div>
+
+						<div class="programm__additional">
+							<div class="programm__subtitle">
+								<h3>Дополнительно</h3>
+								<div class="programm__line w-divider">
+									<span></span>
+								</div>
+							</div>
+							<div class="programm__additional-list">
+								<div><input type="checkbox" id="additional-sugar" checked>
+									<label for="additional-sugar">Сахарозаменитель</label>
+								</div>
+								<div><input type="checkbox" id="additional-water">
+									<label for="additional-water">Питьевая Вода</label>
+								</div>
+								<div><input type="checkbox" id="additional-milk">
+									<label for="additional-milk">Молоко</label>
+								</div>
+								<div><input type="checkbox" id="additional-vitamins">
+									<label for="additional-vitamins">Витамины</label>
+								</div>
+
+
+							</div>
+						</div>
+
+						<div class="programm__button">
+							<button class="programm__button-button button">Отправить заявку</button>
+							<p>* — Обязательные поля</p>
+						</div>
+
+
+
+
+				</form>
 			</section>
 
 			<section class="location bg-basic-gray">
@@ -412,17 +218,15 @@
 			</div>
 		</footer>
 
-		</div>
+	</div>
 
-		<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
-		<script type="text/javascript" src="js/jquery.event.move.js"></script>
-		<script type="text/javascript" src="js/jquery.twentytwenty.js"></script>
-
-		<script type="text/javascript" src="js/script.js"></script>
-
-		<script async defer
-			src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDTqitqIsE7L2lmTxwGr7iEAPGlCJYoKek&callback=initMap">
-			</script>
+	<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="js/jquery.event.move.js"></script>
+	<script type="text/javascript" src="js/jquery.twentytwenty.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
+	<script async defer
+		src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDTqitqIsE7L2lmTxwGr7iEAPGlCJYoKek&callback=initMap">
+		</script>
 
 </body>
 
